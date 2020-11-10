@@ -68,11 +68,12 @@ i.fa-spotify{
   font-size: 20px;
   margin-left: 7px;
 }
-/* NOTE: below media query set up for any browser size smaller than an iPad */
-@media only screen and (min-width: 0px) {
+@media only screen and (min-width: 400px) {
   .lives{
     display: flex;
+    width:100%;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
     .lives > iframe{
@@ -81,8 +82,9 @@ i.fa-spotify{
       margin-bottom: 10vmin;
   }
 }
-/* NOTE: below media query set up for all devices starting as wide as an iPad to any laptop size */
-@media only screen and (min-width: 768px) {
+/* NOTE: above media query set up for all devices up to as wide as an iPhone X */
+
+@media only screen and (min-width: 800px) {
   .lives{
     display:flex;
     flex-direction: row;
@@ -92,7 +94,6 @@ i.fa-spotify{
     width: 30vw;
     height: 30vh;
   }
-  
 }
 
 .videoLine{
